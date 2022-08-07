@@ -1,0 +1,18 @@
+schema {
+query : Query
+}
+
+type Query {
+getAllEmployee : [EmployeeEntity]
+findPersonByEmail(email : String) : EmployeeEntity
+}
+
+type EmployeeEntity {
+
+      id: String
+	  mobile: String
+	  name: String
+	  email: String
+	  address: [String]
+
+}
